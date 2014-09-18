@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-LOGSTASH_CONFIG_FILE="/opt/logstash/logstash.conf"
+#LOGSTASH_CONFIG_FILE=""
 
-cp ./config/logstash.conf "$LOGSTASH_CONFIG_FILE"
+cp ./config/logstash.conf /opt/logstash/logstash.conf 
 
 # Fire up logstash!
 exec /opt/logstash/bin/logstash \
     agent \
-    --config /opt/ $LOGSTASH_CONFIG_FILE \
+    --config  /opt/logstash/logstash.conf \
     -- \
     web 
