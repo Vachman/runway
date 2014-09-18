@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-#LOGSTASH_CONFIG_FILE=""
-
 cp ./config/logstash.conf /opt/logstash/logstash.conf 
 
 # Fire up logstash!
