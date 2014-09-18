@@ -2,7 +2,7 @@
 
 LOGSTASH_CONFIG_FILE=/opt/logstash/logstash.conf
 
-cp ./config/logstash.conf $LOGSTASH_CONFIG_FILE
+cp ./config/logstash.conf /opt/logstash/logstash.conf
 
 # Fire up logstash!
 exec /opt/logstash/bin/logstash \
