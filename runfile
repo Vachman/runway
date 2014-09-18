@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-$LOGSTASH_CONFIG_FILE=/opt/logstash/logstash.conf
+LOGSTASH_CONFIG_FILE=/opt/logstash/logstash.conf
 
 cp ./config/logstash.conf $LOGSTASH_CONFIG_FILE
 
